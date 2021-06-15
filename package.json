@@ -10,7 +10,7 @@
   "scripts": {
     "start": "ENV=local ts-node-dev src/server.ts",
     "start:prod": "node dist/server.js",
-    "build": "tsc dist",
+    "build": "tsc",
     "test": "yarn test:unit",
     "test:coverage": "yarn test:unit --coverage",
     "test:unit": "jest --config .jestrc-unit.js",
