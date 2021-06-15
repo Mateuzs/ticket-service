@@ -1,0 +1,36 @@
+{
+  "name": "ticket-service",
+  "version": "0.1.0",
+  "author": "Mateusz Zembol",
+  "private": true,
+  "engines": {
+    "node": ">=14",
+    "yarn": ">=1.2.0"
+  },
+  "scripts": {
+    "start": "ENV=local ts-node-dev src/server.ts",
+    "start:prod": "node dist/server.js",
+    "build": "tsc dist",
+    "test": "yarn test:unit",
+    "test:coverage": "yarn test:unit --coverage",
+    "test:unit": "jest --config .jestrc-unit.js"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "@types/helmet": "^4.0.0",
+    "@types/jest": "^26.0.23",
+    "@types/node-cache": "^4.2.5",
+    "@types/pino": "^6.3.8",
+    "jest": "^27.0.4",
+    "pino-pretty": "^5.0.2",
+    "ts-jest": "^27.0.3",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "node-cache": "^5.1.2",
+    "pino": "^6.11.3"
+  }
+}

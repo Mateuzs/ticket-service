@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowJs": false,
+    "declaration": false,
+    "removeComments": true,
+    "downlevelIteration": true,
+    "outDir": "dist",
+
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "preserveConstEnums": true,
+    "pretty": true,
+    "noEmit": false,
+
+    "baseUrl": "./",
+    "paths": {
+      "*": ["node_modules/*", "node_modules/@types/*"]
+    },
+    "skipLibCheck": false,
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "exclude": ["./test"]
+}
